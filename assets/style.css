@@ -165,22 +165,26 @@ ul, ol { margin: 0; }
 .steps-grid h3 { margin-block: 26px 15px; font-size: 22px; }
 .steps-grid p { color: var(--muted); font-size: 17px; }
 
-/* Pricing is visible, with no fabricated amount. */
+/* A single consumer price, with minimum time and travel terms beside it. */
 .pricing { background: var(--sage); }
 .pricing-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 110px; align-items: center; }
 .pricing-intro { max-width: 495px; margin-top: 27px; font-size: 19px; color: #505f4f; }
+.pricing-example { max-width: 495px; margin-top: 27px; font-size: 18px; color: #505f4f; }
+.pricing-example strong { color: var(--ink); font-weight: 600; }
+.pricing-note { max-width: 495px; margin-top: 22px; font-size: 17px; color: #505f4f; }
 .price-card { padding: 32px; border: 1px solid #c5d0ba; border-radius: var(--radius); background: var(--white); }
 .price-card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; font-size: 13px; color: var(--clay); }
 .price-card-top .icon { width: 21px; height: 21px; flex-basis: 21px; }
 .price-card h3 { margin-bottom: 23px; font-size: 24px; font-family: var(--display); font-weight: 400; }
 .check-list { list-style: none; padding: 0; margin-bottom: 29px; }
-.check-list li { display: flex; align-items: center; gap: 12px; font-size: 17px; }
+.check-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 17px; }
 .check-list li + li { margin-top: 14px; }
-.check-list .icon { width: 19px; height: 19px; flex-basis: 19px; color: var(--forest); }
+.check-list .icon { width: 19px; height: 19px; flex-basis: 19px; margin-top: 5px; color: var(--forest); }
 .price-value { margin-bottom: 27px; }
 .price-value strong { display: block; font: 400 53px/1.2 var(--display); }
 .price-value > span { color: var(--muted); font-size: 15px; }
-.price-extra { font-size: 15px; line-height: 1.6; margin-block: 10px 22px; color: var(--muted); }
+.price-tax-note { color: var(--muted); font-size: 15px; margin-top: 4px; }
+.price-extra { font-size: 16px; line-height: 1.6; margin-block: 10px 22px; color: var(--muted); }
 
 /* Native disclosures work with keyboard and with JavaScript disabled. */
 .faq-grid { display: grid; grid-template-columns: .9fr 1.25fr; gap: 90px; align-items: start; }
@@ -335,7 +339,7 @@ ul, ol { margin: 0; }
   .price-card { padding: 26px; }
   .pricing-intro { font-size: 17px; }
   .price-card h3 { font-size: 23px; }
-  .check-list li { font-size: 15px; }
+  .check-list li { font-size: 17px; }
   .price-card .button { font-size: 15px; padding-inline: 15px; }
   .faq-grid { grid-template-columns: .85fr 1.15fr; gap: 40px; }
   .faq-list summary { font-size: 16px; gap: 15px; }

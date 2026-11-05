@@ -1,15 +1,15 @@
 /*
- * VARME HÆNDER – oplysninger, som kan ændres ét sted.
- * Tomme felter vises ikke. Der må kun indsættes bekræftede oplysninger.
- * Telefon gør automatisk de primære kontaktknapper til "Ring til Julie".
- * En pris vises kun, når både hourlyRateDkk og priceTaxText er udfyldt.
- * Eksempel på priceTaxText: "inkl. moms" – kun hvis dette faktisk gælder.
+ * VARME HÆNDER – supplerende konfiguration til den statiske hjemmeside.
+ * Telefonnummeret er oplyst af ejeren. Prisen er valgt efter brugerens mandat.
+ * Telefon, pris, vilkår og regneeksempler findes også direkte i HTML.
+ * Ved ændringer skal HTML, strukturerede data og denne fil holdes i sync.
+ * Tomt CVR-felt vises ikke. Den viste pris er kundens slutpris; moms lægges ikke oveni.
  */
 window.VARME_HAENDER_CONFIG = Object.freeze({
-  phone: "",
-  phoneDisplay: "",
+  phone: "42427243",
+  phoneDisplay: "42 42 72 43",
   cvr: "",
-  hourlyRateDkk: null,
-  priceTaxText: "",
-  priceExtraText: ""
+  hourlyRateDkk: 425,
+  priceTaxText: "samlet pris for private",
+  priceExtraText: "Ved besøg i andre områder aftaler vi eventuel kørsel på forhånd. Udlæg til varer, billetter og transport under ledsagelse betales særskilt efter aftale."
 });

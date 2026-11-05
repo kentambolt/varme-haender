@@ -45,7 +45,7 @@
     document.querySelectorAll("[data-phone-block]").forEach((el) => { el.hidden = false; });
     document.querySelectorAll("[data-phone-link], [data-primary-contact]").forEach((el) => { el.href = "tel:" + tel; });
     document.querySelectorAll("[data-phone-display]").forEach((el) => { el.textContent = label; });
-    document.querySelectorAll("[data-primary-label]").forEach((el) => { el.textContent = "Ring til Julie"; });
+    document.querySelectorAll("[data-primary-label]").forEach((el) => { el.textContent = "Ring " + label; });
     document.querySelectorAll("[data-primary-icon]").forEach((el) => { el.setAttribute("href", "#icon-phone"); });
     const schema = document.getElementById("business-schema");
     if (schema) {
@@ -63,7 +63,6 @@
       price.textContent = new Intl.NumberFormat("da-DK", { maximumFractionDigits: 2 }).format(config.hourlyRateDkk) + " kr.";
       document.querySelector("[data-price-tax]").textContent = config.priceTaxText.trim();
       document.getElementById("price-value").hidden = false;
-      document.getElementById("price-card-heading").textContent = "Det aftaler vi sammen";
     }
   }
   if (typeof config.priceExtraText === "string" && config.priceExtraText.trim()) {
