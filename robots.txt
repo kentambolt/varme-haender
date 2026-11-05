@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://varmehaender.dk/sitemap.xml
