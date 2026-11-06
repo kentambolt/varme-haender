@@ -2,7 +2,7 @@
 
 (() => {
   const config = window.VARME_HAENDER_CONFIG || {};
-  const email = "julie@varmehaender.dk";
+  const email = "julie@varmehænder.dk";
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".site-nav");
 
@@ -80,7 +80,7 @@
         await navigator.clipboard.writeText(email);
         copyStatus.textContent = "Mailadressen er kopieret. Du kan nu indsætte den i din mail.";
       } catch (_) {
-        copyStatus.textContent = "Adressen kunne ikke kopieres automatisk. Markér julie@varmehaender.dk og kopiér den, eller brug mailknappen.";
+        copyStatus.textContent = "Adressen kunne ikke kopieres automatisk. Markér julie@varmehænder.dk og kopiér den, eller brug mailknappen.";
       }
     });
   }

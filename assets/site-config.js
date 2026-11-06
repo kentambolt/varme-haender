@@ -5,7 +5,7 @@
 window.VARME_HAENDER_CONFIG = Object.freeze({
   phone: "42427243",
   phoneDisplay: "42 42 72 43",
-  cvr: "",
+  cvr: "42401870",
   hourlyRateDkk: 349,
   priceTaxText: "inkl. moms og transport",
   priceExtraText: "Varer ved indkøb og eventuelle entrébilletter betales særskilt efter aftale."
