@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xn--varmehnder-i6a.dk/sitemap.xml
+Sitemap: https://varmehaender.dk/sitemap.xml
