@@ -94,8 +94,6 @@ ul, ol { margin: 0; }
 .portrait-caption { position: relative; display: flex; flex-direction: column; justify-content: center; gap: 3px; min-height: 100px; padding: 21px 29px 22px; background: var(--sage); margin-top: -47px; font-size: 15px; }
 .portrait-name { font: 400 26px/1.3 var(--display); letter-spacing: -.025em; }
 .caption-heart { position: absolute; right: 30px; top: 34px; width: 31px; height: 31px; fill: none; stroke: var(--clay); stroke-width: 1.3; }
-.portrait-note { position: absolute; top: 60px; left: -40px; display: flex; align-items: flex-start; gap: 9px; padding: 15px 19px; border: 1px solid #d7dccf; border-radius: 8px; background: var(--white); box-shadow: 0 6px 20px #1737280c; transform: rotate(-4deg); font-size: 13px; line-height: 1.5; }
-.portrait-note .icon { width: 18px; height: 22px; flex-basis: 18px; color: var(--clay); }
 .portrait-flourish { width: 80px; height: 104px; position: absolute; right: -30px; bottom: 78px; stroke: #5b7652; stroke-width: 1.5; }
 .trust-strip { border-block: 1px solid var(--line); background: #f0f1e8; }
 .trust-grid { display: grid; grid-template-columns: 1fr 1fr 1.2fr; padding-block: 27px; }
@@ -273,7 +271,6 @@ ul, ol { margin: 0; }
   .hero-intro { font-size: 19px; }
   .hero-actions { gap: 21px; }
   .hero-actions .text-link { font-size: 14px; }
-  .portrait-note { left: -14px; top: 38px; padding: 13px; font-size: 11px; }
   .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   .service-card { padding: 29px; }
   .service-card h3 { font-size: 23px; }
@@ -387,7 +384,6 @@ ul, ol { margin: 0; }
   .portrait-crop { aspect-ratio: 1.15; }
   .portrait-caption { margin-top: -19px; min-height: 91px; padding: 19px 24px; font-size: 13px; }
   .portrait-name { font-size: 25px; }
-  .portrait-note { top: 39px; left: -17px; font-size: 11px; }
   .portrait-flourish { right: -20px; bottom: 61px; width: 61px; height: 96px; }
   .trust-grid { grid-template-columns: 1fr; gap: 0; padding-block: 9px; }
   .trust-grid > div { padding: 17px 0; gap: 15px; border-right: 0; border-bottom: 1px solid var(--line); }
@@ -507,7 +503,7 @@ ul, ol { margin: 0; }
 .top-note { font-size: 14px; }
 .brand-tagline { font-size: 12px; }
 .eyebrow, .hero .eyebrow, .about-visual .eyebrow, .document-main .eyebrow { font-size: 13px; }
-.service-top > span, .price-card-top, .portrait-note { font-size: 14px; }
+.service-top > span, .price-card-top { font-size: 14px; }
 .hero-footnote, .portrait-caption, .trust-grid span, .about-location, .coffee-photo figcaption,
 .contact-person p, .contact-label, .callback p, .contact-privacy, .copy-status, .local-note p,
 .footer-main > p, .footer-contact, .footer-contact > span, .footer-bottom, .document-main .document-small { font-size: 16px; }
@@ -538,7 +534,7 @@ ul, ol { margin: 0; }
 @media print {
   body { padding-bottom: 0; font-size: 12pt; background: white; color: black; }
   .site-header { position: static; }
-  .site-nav, .top-note, .menu-toggle, .mobile-contact, .copy-button, .hero-actions, .portrait-note, .portrait-flourish, .footer-bottom { display: none !important; }
+  .site-nav, .top-note, .menu-toggle, .mobile-contact, .copy-button, .hero-actions, .portrait-flourish, .footer-bottom { display: none !important; }
   .container { width: 100%; }
   .section { padding-block: 22px; }
   h1 { font-size: 32pt; } h2 { font-size: 24pt; }
